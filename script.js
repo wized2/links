@@ -16,22 +16,28 @@ async function loadLinks() {
     // 3. Clear the 'Loading...' text
     container.innerHTML = '';
 
-    // 4. Loop through each link and create the HTML
-    links.forEach((item, index) => {
+    // 4. Reverse the array so the latest added item is at the top
+    const reversedLinks = [...links].reverse();
+
+    // 5. Loop through each link and create the HTML
+    reversedLinks.forEach((item, index) => {
       const a = document.createElement('a');
       a.href = item.url;
       a.className = 'link-btn';
       a.target = '_blank'; // Open in new tab
       
       // Add a slight delay to each animation for a cascading effect
-      a.style.animationDelay = `${index * 0.1}s`;
+      a.style.animationDelay = `${index * 0.1	s`;
 
-      // Add the icon and title inside the button
-      a.innerHTML = `<span class="icon">${item.icon || '🔗'}</span> ${item.title}`;
+      // Add the Lucide icon and title inside the button
+      a.innerHTML = `<i data-lucide="${item.icon || 'link'}"></i> <span>${item.title}</span>`;
       
       // Add it to the page
       container.appendChild(a);
     });
+
+    // 6. Tell Lucide to render the icons
+    lucide.createIcons();
 
   } catch (error) {
     console.error('Error loading links:', error);
