@@ -41,39 +41,86 @@ header p {
   max-width: 480px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
 
-/* Link Buttons */
-a.link-btn {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff; /* White cards on cream */
-  color: #141413;
-  text-decoration: none;
-  padding: 20px 24px;
-  border-radius: 12px;
+/* Project Cards */
+.project-card {
+  background-color: #ffffff;
   border: 1px solid #E2DED3; /* Soft warm border */
-  font-size: 1.05rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   animation: fadeIn 0.4s ease forwards;
   opacity: 0;
   transform: translateY(8px);
+  transition: all 0.2s ease;
 }
 
-/* Icon inside button */
-a.link-btn span.icon {
-  margin-right: 14px;
-  font-size: 1.3rem;
-}
-
-/* Hover Effects */
-a.link-btn:hover {
+.project-card:hover {
   border-color: #D79757; /* Claude orange accent */
-  z-index: 1;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px -8px rga(60, 50, 40, 0.15);
+  box-shadow: 0 8px 20px -8px rgba(60, 50, 40, 0.15);
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.card-header i {
+  color: #D79757; /* Claude orange */
+  width: 24px;
+  height: 24px;
+}
+
+/* Card Actions */
+.card-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.btn i {
+  width: 18px;
+  height: 18px;
+}
+
+/* Button variants */
+.btn-code {
+  background-color: #f3f2ee;
+  color: #141413;
+}
+
+.btn-code:hover {
+  background-color: #e8e6df;
+}
+
+.btn-preview {
+  background-color: #D79757;
+  color: #ffffff;
+}
+
+.btn-preview:hover {
+  background-color: #c28448;
 }
 
 /* Loading State */
