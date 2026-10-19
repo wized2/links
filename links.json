@@ -1,14 +1,7 @@
 [
   {
-    "title": "Tap Counter",
-    "url": "https://your-gist-link-here",
-    "icon": "🖱️"\n  },
-  {
     "title": "Color Flipper",
     "url": "https://htmlpreview.github.io/?https://gist.githubusercontent.com/wized2/1e52bacb4c848a1fdadec1116eb950eb/raw/index.html",
-    "icon": "🎨"\n  },
-  {
-    "title": "My GitHub",
-    "url": "https://github.com/wized2",
-    "icon": "💻"\n  }
+    "icon": "palette"
+  }
 ]
