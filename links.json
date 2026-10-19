@@ -1,7 +1,8 @@
 [
   {
     "title": "Color Flipper",
-    "url": "https://htmlpreview.github.io/?https://gist.githubusercontent.com/wized2/1e52bacb4c848a1fdadec1116eb950eb/raw/index.html",
-    "icon": "palette"
+    "icon": "palette",
+    "codeUrl": "https://gist.github.com/wized2/1e52bacb4c848a1fdadec1116eb950eb",
+    "previewUrl": "https://htmlpreview.github.io/?https://gist.githubusercontent.com/wized2/1e52bacb4c848a1fdadec1116eb950eb/raw/index.html"
   }
 ]
