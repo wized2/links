@@ -21,19 +21,34 @@ async function loadLinks() {
 
     // 5. Loop through each link and create the HTML
     reversedLinks.forEach((item, index) => {
-      const a = document.createElement('a');
-      a.href = item.url;
-      a.className = 'link-btn';
-      a.target = '_blank'; // Open in new tab
-      
-      // Add a slight delay to each animation for a cascading effect
-      a.style.animationDelay = `${index * 0.1	s`;
+      // Create the card container
+      const card = document.createElement('div');
+      card.className = 'project-card';
+      card.style.animationDelay = `${index * 0.1}s`;
 
-      // Add the Lucide icon and title inside the button
-      a.innerHTML = `<i data-lucide="${item.icon || 'link'}"></i> <span>${item.title}</span>`;
+      // Card Header (icon + title)
+      const header = document.createElement('div');
+      header.className = 'card-header';
+      header.innerHTML = `<i data-lucide="${item.icon || 'code'}"></i> <span>${item.title}</span>`;
+
+      // Card Actions (Code + Preview buttons)
+      const actions = document.createElement('div');
+      actions.className = 'card-actions';
+      actions.innerHTML = `
+        <a href="${item.codeUrl}" target="_blank" class="btn btn-code">
+          <i data-lucide="code"></i> Code
+        </a>
+        <a href="${item.previewUrl}" target="_blank" class="btn btn-preview">
+          <i data-lucide="external-link"></i> Preview
+        </a>
+      `;
+
+      // Assemble the card
+      card.appendChild(header);
+      card.appendChild(actions);
       
       // Add it to the page
-      container.appendChild(a);
+      container.appendChild(card);
     });
 
     // 6. Tell Lucide to render the icons
