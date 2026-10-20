@@ -4,5 +4,11 @@
     "icon": "palette",
     "codeUrl": "https://gist.github.com/wized2/1e52bacb4c848a1fdadec1116eb950eb",
     "previewUrl": "https://htmlpreview.github.io/?https://gist.githubusercontent.com/wized2/1e52bacb4c848a1fdadec1116eb950eb/raw/index.html"
+  },
+  {
+    "title": "Digital Clock",
+    "icon": "clock",
+    "codeUrl": "https://gist.github.com/wized2/067460ebb353a97364c461e0dc331e86",
+    "previewUrl": "https://htmlpreview.github.io/?https://gist.githubusercontent.com/wized2/067460ebb353a97364c461e0dc331e86/raw/index.html"
   }
 ]
