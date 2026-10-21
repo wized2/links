@@ -10,5 +10,11 @@
     "icon": "clock",
     "codeUrl": "https://gist.github.com/wized2/067460ebb353a97364c461e0dc331e86",
     "previewUrl": "https://htmlpreview.github.io/?https://gist.githubusercontent.com/wized2/067460ebb353a97364c461e0dc331e86/raw/index.html"
+  },
+  {
+    "title": "Password Generator",
+    "icon": "key-round",
+    "codeUrl": "https://gist.github.com/wized2/172c0feea6b23de9eab05c0a99d1dfc1",
+    "previewUrl": "https://htmlpreview.github.io/?https://gist.githubusercontent.com/wized2/172c0feea6b23de9eab05c0a99d1dfc1/raw/index.html"
   }
 ]
